@@ -1,7 +1,7 @@
 # TechGuide 📱💻🗄️
 
 ## 👥 Integrantes do Grupo
-* **Otaviano**
+* **Otaviano e Gustavo Faber**
 
 ## 📝 Breve Descrição
 O **TechGuide** é uma webpage informativa e responsiva desenvolvida com o intuito educativo de desmistificar o funcionamento do ecossistema de desenvolvimento de software.
