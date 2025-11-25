@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como Funciona a Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">TechGuide</div>
+            <ul class="nav-links">
+                <li><a href="#html">HTML/Web</a></li>
+                <li><a href="#db">Banco de Dados</a></li>
+                <li><a href="#mobile">Mobile</a></li>
+                <li><a href="#integracao">Integração</a></li>
+                <li><a href="#exemplo">Exemplo Real</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Entendendo o Ecossistema Digital</h1>
+            <p>Descubra como sites, aplicativos e bancos de dados conversam entre si para criar os apps que você usa todos os dias.</p>
+            <a href="#html" class="btn">Começar</a>
+        </div>
+    </section>
+
+    <main class="container">
+        
+        <section id="html" class="content-section">
+            <h2>1. O que é HTML? (O Front-end)</h2>
+            <div class="card">
+                <h3>O Esqueleto da Web</h3>
+                <p>O <strong>HTML (HyperText Markup Language)</strong> é a base de qualquer página web. Imagine ele como a estrutura de um prédio: as vigas e colunas que definem onde fica a porta, a janela e o teto.</p>
+                <ul>
+                    <li><strong>Função:</strong> Diz ao navegador "isto é um título", "isto é um botão", "isto é uma imagem".</li>
+                    <li><strong>No Front-end:</strong> Ele trabalha junto com o <strong>CSS</strong> (que é a pintura e decoração) e o <strong>JavaScript</strong> (que é a parte elétrica e funcional) para criar o que o usuário vê e clica.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="db" class="content-section">
+            <h2>2. Banco de Dados</h2>
+            <div class="card">
+                <h3>A Memória do Sistema</h3>
+                <p>Se o HTML é o visual, o Banco de Dados é o cérebro que guarda as lembranças. Ele é um sistema organizado para armazenar, buscar e gerenciar informações de forma segura.</p>
+                <p><strong>Por que é importante?</strong> Sem ele, toda vez que você fechasse um site, seus dados sumiriam. O Banco de Dados permite a <em>persistência</em> dos dados (seu login, seu histórico de compras, suas mensagens).</p>
+            </div>
+            
+
+[Image of relational database diagram tables connected]
+
+        </section>
+
+        <section id="mobile" class="content-section">
+            <h2>3. Aplicativos Mobile</h2>
+            <div class="card">
+                <h3>Na Palma da Mão</h3>
+                <p>Aplicativos mobile (Android/iOS) são softwares instalados diretamente no dispositivo. Diferente de um site estático, eles precisam ser muito eficientes.</p>
+                <p><strong>Como se comunicam?</strong> O celular não guarda todos os dados do mundo (seria pesado demais). Ele se comunica com <strong>Servidores</strong> através de <strong>APIs</strong> (Application Programming Interfaces). O app pede dados (ex: "mostre meu saldo") e o servidor responde.</p>
+            </div>
+        </section>
+
+        <section id="integracao" class="content-section">
+            <h2>4. A Grande Integração</h2>
+            <p>Como tudo isso funciona junto? Imagine um restaurante:</p>
+            <div class="flow-container">
+                <div class="flow-step">
+                    <span class="icon">📱</span>
+                    <strong>Mobile/Web</strong>
+                    <p>O Cliente (Front-end).</p>
+                </div>
+                <div class="arrow">➡ Requisição (API) ➡</div>
+                <div class="flow-step">
+                    <span class="icon">⚙️</span>
+                    <strong>Back-end</strong>
+                    <p>O Garçom (Servidor).</p>
+                </div>
+                <div class="arrow">➡ Consulta SQL ➡</div>
+                <div class="flow-step">
+                    <span class="icon">🗄️</span>
+                    <strong>Banco de Dados</strong>
+                    <p>A Cozinha (Armazém).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="exemplo" class="content-section">
+            <h2>Exemplo Prático: iFood</h2>
+            <div class="example-box">
+                <h3>O Fluxo do Pedido</h3>
+                <ol class="timeline">
+                    <li>
+                        <strong>No App (Mobile):</strong> Você escolhe um hambúrguer e clica em "Pedir". O app envia um arquivo JSON (texto) para o servidor do iFood.
+                    </li>
+                    <li>
+                        <strong>No Servidor (Back-end):</strong> O servidor recebe o pedido, verifica se seu cartão tem saldo e avisa o restaurante.
+                    </li>
+                    <li>
+                        <strong>No Restaurante (HTML/Web):</strong> O dono do restaurante tem um painel web (feito em HTML/React) aberto no computador. O pedido aparece na tela dele.
+                    </li>
+                    <li>
+                        <strong>No Banco de Dados:</strong> O sistema grava: <em>"Usuário X pediu Hambúrguer Y às 20:00"</em> para ficar no seu histórico.
+                    </li>
+                </ol>
+                <button id="simulate-btn" class="btn-outline">Simular Fluxo no Console</button>
+                <p id="simulation-result" class="hidden-msg"></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Guia de Tecnologia. Feito por Otaviano H.Sulzbacher.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

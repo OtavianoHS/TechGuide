@@ -1,0 +1,213 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f6f8;
+}
+
+/* Navegação */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #3498db;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #3498db;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* Layout Geral */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 1rem;
+}
+
+/* Diagrama de Fluxo */
+.flow-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    flex-wrap: wrap;
+}
+
+.flow-step {
+    text-align: center;
+    flex: 1;
+    min-width: 120px;
+}
+
+.icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.arrow {
+    color: #7f8c8d;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/* Timeline do Exemplo */
+.example-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    border-left: 5px solid #e74c3c; /* Cor do iFood */
+}
+
+.timeline li {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #eee;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.btn-outline:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.hidden-msg {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplificação para exemplo */
+    }
+    
+    .flow-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+}
